@@ -2,7 +2,7 @@
 
 ## OCA exam objectives covered in chapter 1:
 
-### Java Basics
+### Java Basics
 
 * Define the scope of variables
 * Define the structure of a Java class
@@ -10,7 +10,7 @@
 * Import other Java packages to make them accessible in your code
 * Compare and contrast the features and components of Java such as platform independence, object orientation, encapsulation, etc.
 
-### Working with Java Data Types
+### Working with Java Data Types
 
 * Declare and initialize variables (including casting or primitive types)
 * Differentiate between object reference variables and primitive variables
