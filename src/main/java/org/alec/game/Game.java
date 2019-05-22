@@ -1,7 +1,5 @@
 package org.alec.game;
 
-import org.alec.fizzbuzz.FizzBuzz;
-
 public class Game {
     static public main(String args...) {
         FizzBuzz fizzBuzz;
