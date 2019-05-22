@@ -7,14 +7,24 @@ public class FizzBuzz {
     public String play() {
         int currentNumber = 1;
         String result;
-        if (currentNumber % 15 == 0) {
-            result = FIZZ + BUZZ;
-        } else if (currentNumber % 5 == 0) {
-            result += BUZZ;
-        } else if (currentNumber % 3 == 0) {
-            result = Words.FIZZ;
-        } else {
-            result = currentNumber;
+        int remainder = currentNumber % 15;
+
+        switch (remainder){
+            default:
+                result = currentNumber;
+            case 3:
+            case 6:
+            case 9:
+            case 12:
+                result = Words.FIZZ;
+                break;
+            case 5:
+            case 10:
+                result = BUZZ;
+                break;
+            case 15:
+                result = FIZZ + BUZZ;
+                break;
         }
         currentNumber.increment();
         return result;
