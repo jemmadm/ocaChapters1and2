@@ -6,6 +6,7 @@ You have an implementation of `FizzBuzz`, with a `Game` class that has a `main` 
 Unfortunately the author of the code has made more than a few mistakes, it's your job to identify and fix them, as per the below:
 
 * **Don't use an IDE** use a plain text editor such as Atom https://atom.io/
+* List all the variables in the file, and note whether they're instance, class or local.
 * List all the errors you can see in the file
 * Once you have a list of all the errors try to correct them - still without using your IDE, or a compiler!
 * When you think you have a correct submission - send it to your mentor for testing.....
