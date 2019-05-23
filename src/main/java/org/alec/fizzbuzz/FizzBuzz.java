@@ -1,32 +1,34 @@
 package org.alec.fizzbuzz;
 
-static import org.alec.words.Words.*;
+import static org.alec.words.Words.*; //static import
 
 public class FizzBuzz {
 
+    int currentNumber = 1; //variable in the wrong scope - was local
+
     public String play() {
-        int currentNumber = 1;
         String result;
         int remainder = currentNumber % 15;
 
         switch (remainder){
             default:
-                result = currentNumber;
+                result = Integer.toString(currentNumber); //can't assign int to String
+                break; //missing break statement
             case 3:
             case 6:
             case 9:
             case 12:
-                result = Words.FIZZ;
+                result = FIZZ; //reference to constant via class is wrong given static import
                 break;
             case 5:
             case 10:
                 result = BUZZ;
                 break;
-            case 15:
+            case 0: //number was wrong (genuine error) - was 15
                 result = FIZZ + BUZZ;
                 break;
         }
-        currentNumber.increment();
+        currentNumber++; //can't call a method on a primitive, and increment() isn't a thing
         return result;
     }
 }
