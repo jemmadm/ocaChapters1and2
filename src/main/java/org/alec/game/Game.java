@@ -1,7 +1,7 @@
 package org.alec.game;
 
 public class Game {
-     private static main(String args...) {
+     public static void main(String args...) {
         FizzBuzz fizzBuzz = new Fizzbuzz();
         int i = 0;
         do {
