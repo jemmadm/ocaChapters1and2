@@ -7,8 +7,8 @@
  */
 
 plugins {
-    // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
 }
 
 dependencies {
@@ -20,6 +20,10 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+}
+
+application {
+    mainClassName = 'org.alec.game.Game'
 }
 
 // In this section you declare where to find the dependencies of your project
