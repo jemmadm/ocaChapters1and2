@@ -13,14 +13,14 @@ public class FizzBuzz {
             case 0:
                 result = FIZZ + BUZZ;
                 break;
-            case 5:
-            case 10:
-                result = BUZZ;
-                break;
             case 3:
             case 6:
             case 9:
                 result = FIZZ;
+                break;
+            case 5:
+            case 10:
+                result = BUZZ;
                 break;
             default:
                 result += currentNumber;
