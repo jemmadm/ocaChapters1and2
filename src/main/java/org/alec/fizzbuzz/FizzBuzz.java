@@ -5,9 +5,8 @@ import static org.alec.words.Words.*;
 public class FizzBuzz {
 
     public String play(int number) {
-        int currentNumber = number;
-        String result = "";
-        int remainder = currentNumber % 15;
+        String result;
+        int remainder = number % 15;
 
         switch (remainder) {
             case 0:
@@ -23,7 +22,7 @@ public class FizzBuzz {
                 result = BUZZ;
                 break;
             default:
-                result += currentNumber;
+                result = "" + number;
         }
         return result;
     }
